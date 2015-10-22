@@ -1,23 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
 public class GameManager : MonoBehaviour {
 	public static GameManager Instance{get;private set;}
-	public GameObject grounds;
-	public float groundMoveSpeed;
 
 	void Awake(){
 		Instance=this;
 	}
-	void Start () {
-		grounds.GetComponent<Rigidbody>().velocity=Vector3.back*groundMoveSpeed;
+	void Start(){
+
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	void UpdateScoreUI(){
+
 	}
-	public void EndGame(){
-		grounds.GetComponent<Rigidbody>().velocity=Vector3.zero;
-	}
+
 }
