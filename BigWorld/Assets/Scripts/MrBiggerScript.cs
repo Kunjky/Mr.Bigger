@@ -21,6 +21,14 @@ public class MrBiggerScript : MonoBehaviour {
 	void Start(){
 		UpdateUI();
 	}
+	void Update(){
+		Turn();
+	}
+	void Turn(){
+		//transform.rotation=Quaternion.Euler(new Vector3(0,,0));
+		transform.rotation=Quaternion.Lerp(transform.rotation,Quaternion.Euler(
+			new Vector3(0,Input.GetAxis("Horizontal")*20,0)),Time.deltaTime*3);
+	}
 	void OnTriggerEnter(Collider other){
 		if(other.tag == "Food"){
 			AddFood();

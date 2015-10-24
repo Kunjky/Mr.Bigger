@@ -1,10 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MrBiggerScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CameraMove.cs">
     <Files>
-      <File FileName="Assets\Scripts\MrBiggerScript.cs" Line="31" Column="52" />
-      <File FileName="Assets\Scripts\GroundManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CameraMove.cs" Line="6" Column="18" />
+      <File FileName="Assets\Scripts\MrBiggerScript.cs" Line="30" Column="69" />
+      <File FileName="Assets\Scripts\CameraMove.cs" Line="14" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
