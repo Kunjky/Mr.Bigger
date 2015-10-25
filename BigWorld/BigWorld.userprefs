@@ -1,9 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CameraMove.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PopOutScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\MrBiggerScript.cs" Line="30" Column="69" />
-      <File FileName="Assets\Scripts\CameraMove.cs" Line="14" Column="3" />
+      <File FileName="Assets\Plugins\Pixelplacement\iTween\Sample\RotateSample.cs" Line="12" Column="115" />
+      <File FileName="c:\Users\Admin\Desktop\Mr.Bigger\BigWorld\Assets\Scripts\MrBiggerScript.cs" Line="56" Column="41" />
+      <File FileName="Assets\PopOutScript.cs" Line="12" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

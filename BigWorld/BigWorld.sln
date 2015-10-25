@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{4F77A372-E994-D08E-F4A1-3CC5D68B7795}") = "BigWorld", "Assembly-CSharp-firstpass.csproj", "{E96A10CA-1B22-C864-412A-5682C9FC936B}"
+EndProject
 Project("{4F77A372-E994-D08E-F4A1-3CC5D68B7795}") = "BigWorld", "Assembly-CSharp.csproj", "{10B6B89B-F18D-DEAC-F852-988650E34F18}"
 EndProject
 Global
@@ -9,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E96A10CA-1B22-C864-412A-5682C9FC936B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E96A10CA-1B22-C864-412A-5682C9FC936B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E96A10CA-1B22-C864-412A-5682C9FC936B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E96A10CA-1B22-C864-412A-5682C9FC936B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{10B6B89B-F18D-DEAC-F852-988650E34F18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{10B6B89B-F18D-DEAC-F852-988650E34F18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10B6B89B-F18D-DEAC-F852-988650E34F18}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -17,7 +23,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																										GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																						GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

@@ -53,7 +53,7 @@ public class MrBiggerScript : MonoBehaviour {
 		UpdateUI();
 	}
 	void IncreaseSize(int level){
-		transform.localScale+=Vector3.one*0.2f*level;
+		iTween.ScaleAdd(this.gameObject,iTween.Hash("amount",new Vector3(.2f,.2f,.2f)*level,"easeType", "easeOutElastic","time",1));
 	}
 	public void UpdateUI(){
 		foodText.text="Food:"+curFoods+"/"+foodNeedToIncreaseLevel[curSize];
