@@ -6,8 +6,7 @@ public class GroundManager : MonoBehaviour {
 	public static GroundManager Instance{get;private set;}
 	// Tham chiếu đến GroundContainer
 	public Transform GroundContainer;
-	// speed của GroundContainer
-	public float groundMoveSpeed;
+
 	// Tạo một mảng chứa cái prefabs ground;
 	public GameObject[] grounds;
 	// Tạo meột list GameObject
@@ -27,40 +26,39 @@ public class GroundManager : MonoBehaviour {
 			groundList.Add(g);
 		}
 		InitGround();
-		// Set velocity cho GroundContainer
-		GroundContainer.GetComponent<Rigidbody>().velocity=Vector3.back*groundMoveSpeed;
 	}
-	
 
-	void Update () {
-	
-	}
 	void InitGround(){
 		groundList[0].SetActive(true);
 		groundList[0].transform.position=new Vector3(0,0,0);
-		int index=Random.Range(1,2);
+		int index=Random.Range(1,groundList.Count-1);
 		groundList[index].SetActive(true);
-		groundList[index].transform.position=new Vector3(0,0,120);
+		groundList[index].transform.position=new Vector3(0,0,100);
+
 	}
 
 	void CreateGround(Transform pos){
 		// Tạo 1 biến random
-		int index=(int)Random.Range(0,groundList.Count);
+		int index=(int)Random.Range(1,groundList.Count);
 		// Kiểm tra xem có trong Hieranchy chưa?
 		if(!groundList[index].activeInHierarchy){
 			// Nếu chưa thì active
 			groundList[index].SetActive(true);
-			groundList[index].transform.position=new Vector3(0,0,pos.position.z+120*2);
+			groundList[index].transform.position=new Vector3(0,0,pos.position.z+100*2);
 
 		}else{
 			// Nếu có rồi thì Random lại
 			CreateGround(pos);
 		}
 	}
+
 	void OnTriggerEnter(Collider other){
-		if(other.transform.parent.tag=="OngCong"){
-		other.transform.parent.gameObject.SetActive(false);
-		CreateGround(other.transform);
+		if(other==null)
+			return;
+		if(other.tag=="Platform"){
+			other.gameObject.SetActive(false);
+			CreateGround(other.transform);
 		}
 	}
+
 }

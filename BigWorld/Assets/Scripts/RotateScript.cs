@@ -2,13 +2,9 @@
 using System.Collections;
 
 public class RotateScript : MonoBehaviour {
-	public Vector3 direction;
-	private Transform m_transform;
+	public float speed;
 	void Start(){
-		m_transform=transform;
-	}
-	void Update(){
-		m_transform.Rotate(direction*Time.deltaTime);
+		GetComponent<Rigidbody>().angularVelocity=Vector3.forward*speed;
 	}
 
 }
